@@ -2,18 +2,18 @@
 <html lang="cs">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- TODO (tmavý režim): po přidání tmavého schématu změňte content na "light dark" -->
   <meta name="color-scheme" content="light">
-  <title>TODO: Jméno Příjmení – osobní stránka</title>
+  <title>Jakub Klimeš – osobní stránka</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#obsah">Přejít na obsah</a>
 
   <header class="site-header">
-    <h1>TODO: Jméno Příjmení</h1>
-    <p>TODO: jedna věta o vás.</p>
+    <h1>Jakub Klimeš</h1>
+    <p>Zkušenost s životem.</p>
     <nav aria-label="Hlavní navigace">
       <ul>
         <li><a href="#o-mne">O mně</a></li>
@@ -28,25 +28,44 @@
 
     <section id="o-mne" class="card" aria-labelledby="o-mne-nadpis">
       <h2 id="o-mne-nadpis">O mně</h2>
-      <!-- TODO: vložte fotku nebo obrázek do složky img/, odkomentujte řádek níže
-           a vyplňte výstižný alt (u čistě dekorativního obrázku alt prázdný):
-      -->
-      <p>TODO: pár vět o vás.</p>
+      <figure>
+        <figcaption>
+        <img src="img/ja.jpg" alt="Fotka mě">
+        </figcaption>
+        </figure>
+      <p>Mam rád koláče,počítače, volný čas a holky.</p>
     </section>
 
     <section id="projekty" aria-labelledby="projekty-nadpis">
       <h2 id="projekty-nadpis">Projekty</h2>
-      <!-- TODO: alespoň tři položky, každá s obrázkem. Zkopírujte celý prvek article a upravte ho. -->
+    
       <article class="card">
-        <h3>TODO: název projektu</h3>
-        <p>TODO: stručný popis projektu.</p>
+        <h3>Docházkový žalovníčkový systém</h3>
+        <figure>
+          <img src="img/projekt1.jpg" alt="Projekt">
+        </figure>
+        <p>Složitý projekt kombinující databáze, zapojování Arduina, a webovky.</p>
+      </article>
+      <article class="card">
+        <h3>EcoHome </h3>
+        <figure>
+          <img src="img/projekt2.png" alt="Projekt">
+        </figure>
+        <p>Moderní koncept udržitelného bydlení, který propojuje ekologické materiály, úsporu energie a minimalistický design.</p>
+      </article>
+      <article class="card">
+        <h3>Urban Coffee</h3>
+        <figure>
+          <img src="img/projekt3.jpg" alt="projekt">
+        </figure>
+        <p>Návrh stylové městské kavárny, která nabízí příjemné prostředí pro setkávání, odpočinek a kvalitní kávu.</p>
       </article>
     </section>
 
     <section id="dovednosti" aria-labelledby="dovednosti-nadpis">
       <h2 id="dovednosti-nadpis">Dovednosti</h2>
       <table>
-        <caption>TODO: popisek tabulky</caption>
+        <caption>Programování</caption>
         <thead>
           <tr>
             <th scope="col">Dovednost</th>
@@ -55,8 +74,34 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">TODO: dovednost</th>
-            <td>TODO: úroveň</td>
+            <th scope="row">C#</th>
+            <td>Začátečník</td>
+          </tr>
+                    <tr>
+            <th scope="row">Java</th>
+            <td>Pokročilý</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+      <table>
+        <caption>
+          Jazyky
+        </caption>
+        <thead>
+          <tr>
+            <th scope = "col">Jazyk</th>
+            <th scope = "col">Úroveň</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope = "row">Angličtina</th>
+            <td scope = "row">C1</td>
+          </tr>
+            <th scope="row">Čeština</th>
+            <td>Rodilý mluvčí - C2</td>
           </tr>
         </tbody>
       </table>
@@ -65,15 +110,14 @@
     <section id="kontakt" class="card" aria-labelledby="kontakt-nadpis">
       <h2 id="kontakt-nadpis">Kontakt</h2>
       <address>
-        <!-- TODO: e-mail jako odkaz (mailto:), případně město nebo odkaz na profil -->
-        <p>E-mail: <a href="mailto:TODO">TODO</a></p>
+        <p>E-mail: <a href="mailto:jklimes159@gmail.com">jklimes159@gmail.com</a></p>
       </address>
     </section>
 
   </main>
 
   <footer>
-    <p>© TODO: rok a jméno</p>
+    <p>&copy; 2026 Jakub Klimeš</p>
   </footer>
 </body>
 </html>
