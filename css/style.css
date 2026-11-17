@@ -12,8 +12,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* TODO */
+    --barva-pozadi: #121212;      /* Tmavě šedá je na oči lepší než čistá černá */
+    --barva-textu: #ffffff;       /* Světle šedý text neoslňuje tolik jako čistě bílý */
+    --barva-odkazu: #66b3ff;
+    --barva-nadpisu: #ffffff;
   }
+}
+
+/* 3. Aplikace proměnných na HTML elementy */
+body {
+  background-color: var(--barva-pozadi);
+  color: var(--barva-textu);
+  /* Volitelný plynulý přechod při změně režimu (zadání zmiňuje i omezení animací, tak opatrně) */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  color: var(--barva-nadpisu);
+}
+
+a {
+  color: var(--barva-odkazu);
 }
 
 @media (prefers-contrast: more) {
@@ -86,10 +105,7 @@ img {
         padding: 0.75rem;
     }
 }
-body {
-    background-color: #ffffff;
-    color: #222222;
-}
+
 
 button {
     background-color: #0056b3;
