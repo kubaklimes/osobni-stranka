@@ -1,29 +1,67 @@
 @media (min-width: 40em) {
-  /* TODO */
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .projekty {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 60em) {
-  /* TODO */
+  .projekty {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    max-width: 60rem;
+    margin-inline: auto;
+  }
 }
 
 @media (min-width: 80em) {
-  /* TODO */
+  main {
+    max-width: 75rem;
+  }
+
+  body {
+    font-size: 1.125rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --barva-pozadi: #121212;      /* Tmavě šedá je na oči lepší než čistá černá */
-    --barva-textu: #ffffff;       /* Světle šedý text neoslňuje tolik jako čistě bílý */
+    --barva-pozadi: #121212;      
+    --barva-textu: #ffffff;       
     --barva-odkazu: #66b3ff;
     --barva-nadpisu: #ffffff;
   }
 }
 
-/* 3. Aplikace proměnných na HTML elementy */
+*, *::before, *::after {
+  box-sizing: border-box; 
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.projekty {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+
 body {
   background-color: var(--barva-pozadi);
   color: var(--barva-textu);
-  /* Volitelný plynulý přechod při změně režimu (zadání zmiňuje i omezení animací, tak opatrně) */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
