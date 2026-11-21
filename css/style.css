@@ -71,10 +71,32 @@ h1, h2, h3 {
 
 a {
   color: var(--barva-odkazu);
+  text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.15em;
+    font-weight: 700;
 }
 
+:focus-visible {
+    outline: 3px solid var(--barva-odkazu);
+    outline-offset: 2px;
+  }
+
+article, .projekty > *, table, th, td, button, input, textarea {
+    border: 2px solid var(--barva-textu);
+  }
+
+body, header, main, section, article, footer, .projekty > * {
+    background-image: none !important;
+  }
+
 @media (prefers-contrast: more) {
-  /* TODO */
+  :root {
+    --barva-pozadi: #ffffff;
+    --barva-textu: #000000;
+    --barva-odkazu: #0000aa;
+    --barva-nadpisu: #000000;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
